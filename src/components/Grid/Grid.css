@@ -8,3 +8,8 @@
   left: 0;
   right: 0;
 }
+
+.Grid__main {
+  display: grid;
+  gap: 10px;
+}

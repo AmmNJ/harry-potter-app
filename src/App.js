@@ -12,7 +12,9 @@ export default function App() {
     .catch(error => handleGetCharacterError(error))
 
   function createCards(characters) {
-    const cards = characters.map(character => Card(character.name))
+    const cards = characters.map(character =>
+      Card(character.name, character.yearOfBirth)
+    )
     document.body.append(...cards)
   }
 

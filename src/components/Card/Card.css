@@ -1,5 +1,16 @@
 .Card {
-  color: var(--color-primary);
-  border-bottom: 1px solid;
+  display: grid;
+  background: var(--color-cardbackground);
+  color: var(--color-white);
+  border-radius: 8px;
   padding: 12px;
+  box-shadow: 4px 4px 8px #fff;
+}
+
+.Card__header {
+  font-size: 20px;
+}
+
+.Card__info {
+  font-size: 14px;
 }
