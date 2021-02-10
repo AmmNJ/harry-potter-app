@@ -4,7 +4,8 @@
   color: var(--color-white);
   border-radius: 8px;
   padding: 12px;
-  box-shadow: 4px 4px 8px #fff;
+  box-shadow: 5px 5px 15px 6px rgba(0, 0, 0, 0.05);
+  height: 100px;
 }
 
 .Card__header {
@@ -12,5 +13,6 @@
 }
 
 .Card__info {
-  font-size: 14px;
+  font-size: 12px;
+  color: var(--color-card-info);
 }
