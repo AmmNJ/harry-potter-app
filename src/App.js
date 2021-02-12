@@ -7,7 +7,9 @@ import createElement from './lib/createElement'
 
 export default function App() {
   const grid = Grid()
+
   document.body.append(grid)
+
   const header = AppHeader('Harry Potter App')
   const main = AppMain()
 
@@ -18,9 +20,7 @@ export default function App() {
   grid.append(header, main)
 
   function createCards(characters) {
-    const cards = characters.map(character =>
-      Card(character.name, character.yearOfBirth)
-    )
+    const cards = characters.map(character => Card(character))
     main.append(...cards)
   }
 
